@@ -1,0 +1,9 @@
+.banner-img-wrapper {
+  max-height: 315px;
+  overflow-y: hidden;
+  margin-bottom: 1em;
+}
+
+.banner-img-wrapper img {
+  width: 100%;
+}

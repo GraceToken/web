@@ -1,0 +1,16 @@
+.campaign-details .main-img {
+	width: 100%;
+}
+
+.campaign-profile img {
+	border-radius: 50%;
+	width: 3em;
+}
+
+.campaign-profile {
+	margin-bottom: 1em;
+}
+
+.campaign-details .action {
+	margin-right: 0.5em;
+}

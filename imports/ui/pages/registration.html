@@ -1,0 +1,64 @@
+<template name="user_register">
+	<div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <form class="register-form">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+             <h3 class="text-center">Registration</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label>Email</label>
+              <input id="email" type="email" class="form-control" name="email"  value="">
+            </div>
+
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" name="first_name" class="form-control" id="first_name" value="">
+            </div>
+
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" name="last_name" class="form-control" id="lastname" value="">
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" class="form-control" id="password" value="">
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button type="submit" class="btn btn-donate btn-fill">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>	
+</template>
+
+<template name="user_login">
+  <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <form class="login-form">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="text-center">Login</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" id="email" value="">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" class="form-control" id="password" value="">
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button type="submit" class="btn btn-donate btn-fill">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>

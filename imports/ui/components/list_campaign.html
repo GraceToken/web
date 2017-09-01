@@ -1,0 +1,22 @@
+<template name="list_campaign">
+  <div class="list-campaign">
+  	<div class="inline top-align info">
+  		<img src="{{image_url}}" class="logo img-round">
+  	</div>
+  	<div class="inline top-align info campaign-name">
+  		<a href="/campaigns/{{_id}}"><h4>{{name}}</h4></a>
+      <p>{{short_description}}</p>
+  	</div>
+  	<div class="inline top-align info time">
+      Starting: {{startTime}}<br>
+      Ending: {{endTime}}
+    </div>
+    <br>
+    <div class="inline top-align info">
+      {{decimalToPercent reward}}% Reward
+    </div>
+    <div class="inline top-align info">
+  		{{raised}} of {{goal}} GRCE raised
+  	</div>
+  </div>
+</template>

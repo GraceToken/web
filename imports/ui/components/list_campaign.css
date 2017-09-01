@@ -1,0 +1,18 @@
+.list-campaign .logo {
+	width: 5em;
+}
+
+.list-campaign .info {
+	padding: 0 0.5em;
+}
+
+.list-campaign {
+	margin-bottom: 2em;
+}
+
+.list-campaign .campaign-name {
+	width: 25em;
+}
+
+.list-camapign .time {
+}

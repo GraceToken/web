@@ -1,0 +1,54 @@
+<template name="organization_show">
+  {{#with org}}
+  <div class="row">
+    <div class="col-md-3">
+      <div class="org-logo text-center">
+        <img src="{{this.image_url}}">
+      </div>
+      <h3>
+        {{this.name}}
+      </h3>
+      <p>
+        <strong>Website: </strong><a href="{{this.website_url}}"> {{this.website_url}}</a>
+      </p>
+      <div class="btn btn-donate btn-fill"><strong>Donate</strong></div><br><br>
+      <div class="btn btn-secondary btn-fill">Become an Advocate</div><br><br>
+      <a href="{{this.facebook_url}}">
+        <i class="fa fa-facebook fa-2x"></i>&nbsp;&nbsp;&nbsp;
+      </a>
+      <a href="{{this.twitter_url}}">
+        <i class="fa fa-twitter fa-2x"></i>&nbsp;&nbsp;&nbsp;
+      </a>
+      <a href="{{this.email}}">
+        <i class="fa fa-envelope-o fa-2x"></i>
+      </a>
+      
+      <h3>Summary</h3>
+        {{#markdown}}
+          {{this.description}}
+        {{/markdown}}
+    </div>
+    <div class="col-md-9">
+      <div class="banner-img-wrapper">
+        <img src="http://via.placeholder.com/851x315">
+      </div>
+      
+      <div>
+        <h3>Recent Activities</h3>
+        <hr>
+
+        <div>
+          (Note: this activities feed uses static data for ilustration purposes)
+          <p><a href="#">Joe Smith</a> donated $10 to <a href="#">GiveDirectly</a></p>
+          <p><em>53 minutes ago</em></p>
+        </div>
+        <hr>
+        <div>
+          <p><a href="#">Betty Chen</a> donated $10 to <a href="#">Deworm the World Initiative</a></p>
+          <p><em>1 hour ago</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/with}}
+</template>

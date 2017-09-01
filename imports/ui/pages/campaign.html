@@ -1,0 +1,59 @@
+<template name="campaign_page">
+  {{#with campaign}}
+  <div class="campaign-details">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="http://via.placeholder.com/800x450" class="main-img">
+      </div>
+      <div class="col-md-4">
+        <h4>{{this.name}}</h4>
+        <p>{{this.short_description}}</p>
+
+        <div class="campaign-profile">
+          <a class="inline" href="#">
+            <img src="{{org.image_url}}">
+          </a>
+          <a class="inline" href="/organizations/{{org._id}}">
+            <span>{{org.name}}</span>
+          </a>
+        </div>
+
+        <div class="fundraising">
+          <p><strong>{{this.raised}} GRCE</strong> raised</p>
+          <p>{{raisedPercentage}}% of {{goal}} goal</p>
+          <p>21 days left</p>
+        </div>
+
+        <span class="btn action btn-donate btn-lg">
+          Donate
+        </span>
+        <span class="inline action middle-align">
+          <a href="#">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </span>
+        <span class="inline action middle-align">
+          <a href="#">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </span>
+        <span class="inline action middle-align">
+          <a href="#">
+            <i class="fa fa-link fa-2x"></i>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        {{#markdown}}
+          {{this.description}}
+        {{/markdown}}
+      </div>
+      <div class="col-md-4">
+        
+      </div>
+    </div>
+  </div>
+  {{/with}}
+</template>
